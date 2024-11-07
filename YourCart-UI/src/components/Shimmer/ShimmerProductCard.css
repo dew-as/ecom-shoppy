@@ -1,0 +1,43 @@
+/* src/components/ShimmerProductCard.css */
+.shimmer-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.shimmer-image,
+.shimmer-title,
+.shimmer-text {
+    background: #f0f0f0;
+    background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 4px;
+}
+
+.shimmer-image {
+    height: 180px;
+    width: 100%;
+}
+
+.shimmer-title {
+    height: 20px;
+    width: 70%;
+    margin: 15px 0;
+}
+
+.shimmer-text {
+    height: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
